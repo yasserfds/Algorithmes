@@ -5,6 +5,11 @@ import string
 
 def find_missing_letter_in(givenLetters):
     alpha = string.ascii_letters
+    start = alpha.index(givenLetters[0])
+    for letter in alpha[start:] :
+        if letter not in givenLetters :
+            return letter
+    return f"No Missing Letter In Sequence"
 
 
 
