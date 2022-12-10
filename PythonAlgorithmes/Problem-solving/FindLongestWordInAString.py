@@ -15,12 +15,14 @@
 def longest_word_in(sentence):
     longest = ""
     word_list = sentence.split("  ")
-    
+    for word in word_list:
+        if len (word) > len(longest):
+            count = len(word)
+            longest = word
 
-
-
+    return longest
 
 
 # Testing Output
 # Toooooo
-print(longest_word_in("In Programming We Love Elzero Academy tooooooo much"))
+print(longest_word_in("In Programming We Love Elzero Academy Tooooooo Much"))
