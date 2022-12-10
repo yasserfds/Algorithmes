@@ -1,14 +1,14 @@
 # First solution
 
-"""def longest_word_in(sentence):
-    count = 0
-    word_list = sentence.split("  ")
-    for word in word_list:
-        if len (word) > count:
-            count = len(word)
-            longest = word
+#def longest_word_in(sentence):
+#    count = 0
+#    word_list = sentence.split("  ")
+#    for word in word_list:
+#        if len (word) > count:
+#            count = len(word)
+#            longest = word
 
-    return longest """
+#    return longest 
 
 # Second solution
 
