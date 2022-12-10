@@ -18,12 +18,23 @@
 
 // Second solution using rediuce
 
-function longestWordIn(sentence) {
+/* function longestWordIn(sentence) {
     let longestWord = sentence.split("  ").reduce(function(longest, current) {
-        return current.legth > longest.length ? current : longest;
+        console.log(longest)
+        console.log(current)
+        console.log('#'.repeat(10))
+        return current.length > longest.length ? current : longest;
     })
 
-    return splArray;
+    return longestWord;
+} */
+
+// Third solution using arrow function
+
+function longestWordIn(sentence) {
+    let longestWord = sentence
+    .split("  ")
+    .reduce((l, c) => (c.length > l.length ? c : l))
 }
 
 console.log(longestWordIn("In Programming We Love Elzero Academy Tooooo Much"))
