@@ -30,7 +30,6 @@ function daysCount(depth, height) {
 
 
 
-
 function main() {
     var depth = parseInt(readLine(), 10);
     console.log(daysCount(depth, 0))
